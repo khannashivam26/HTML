@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Payment Form</title>
+       <link rel="stylesheet" href="css/1.css"> 
+    </head>
+    <body>
+        <form action="">
+            <h1>PAYMENT FORM</h1>
+            <h2 class="special" >Contact Information</h2>
+            <p>Required Fields are follow by *</p>
+            <p>First Name: * <input type="text" name="name" required></p>
+            <p>Last Name: * <input type="text" name="name" required></p>
+            <p>
+                <fieldset>
+                <legend>Gender *</legend>
+                Male <input type="radio" name="gender" id="male" required>
+                Female<input type="radio" name="gender" id="female" required >
+                Other<input type="radio" name="gender" id="other" required>
+            </fieldset>
+            </p>
+            <p>Address: <textarea name="address" cols="100" rows="8"></textarea></p>
+            <p id="special">Email: * <input type="email" name="email" id="'email"required></p>
+            <p>Pincode: * <input type="number" name="'number" id="number"required></p>
+            <h2>Payment Information</h2>
+            <p>Card Type: *
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select Card Type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="mastercard">MasterCard</option>
+                </select>
+            </p>
+            <p>CardNumber:* <input type="number" name="card_number" required></p>
+            <p>Expiry Date:* <input type="date" name="exp_date" id="exp_date" required></p>
+            <p>CVV:* <input type="password" name="pass" id="pass" required></p>
+            <p><input type="submit" value="Pay Now"></p>
+            
+        </form>
+        <a href="#">Home</a>
+        <ul>
+            <li>Item1</li>
+            <li class="a">Item2</li>
+            <li class="a b">Item3</li>
+            <li class="ab">Item4</li>
+        </ul>
+    </body>
+</html>
+
+<!--
+<form action>= form banane ke liye
+<input type="text">= text add ke liye
+<input type="radio" name="" id="">= mcq type select krne ke liye
+<textarea name="" cols="" rows=""> = bda data storre krne ke liye   
+<input type="">=    
+-->
