@@ -1,0 +1,40 @@
+
+  body{
+    background-color:#999999;
+  }
+  #wrap {
+  width: 70%;
+  margin: 60px auto;
+  padding: 20px;
+  background-color:white;
+  overflow:hidden;
+}
+  #sidebar-content{
+    width:35%;
+    float:left;
+  }
+  #sidebar-content ul li a{
+    color:red;
+  }
+  
+  #main-content{
+    width:65%;
+    float:right;
+  }
+  @media all and(min-width:1001px){
+    #sidebar-content ul li a:after{
+      content:"(" attr(data-email)")";
+      font-size: 11px;
+      font-style:italic;
+      color:grey;
+    }
+  }
+  @media all and (max-width:1000px) and (min-width:700px){
+    #sidebar-content ul li a:before{
+      content:"Email";
+      font-style:italic;
+      color:grey;
+      
+    }
+  }
+  
