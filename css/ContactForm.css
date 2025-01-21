@@ -1,25 +1,41 @@
 body{
-    margin:200px 400px;
-    border:1px solid lightgrey;
-    border-radius:5px;
-    
+    margin:100px 300px; 
+    border-radius:5px;  
+    padding:5px;
 }
-.contact_form{
-    
-    border:1px solid lightgrey;
-    background-color:darkmagenta;
+form{
+    background-color:rgb(205, 252, 96);
+    border:1px solid grey;
     border-radius:5px;
-    
+ 
+}
+.information{
+    background-color:rgb(227, 230, 222);
+    padding:20px;
+}
+.contact_form{    
+    padding:20px;
+    background-color:#bde60b;  
 }
 h1,p[class="text"]{
-    text-align:left;
-    background-color: darkmagenta;
+     margin:0%;   
+    text-align:left; 
     border-radius:8px;
+
 }
+
 input[type="text"],
 input[type="email"],
 textarea{
-    width:100%;
+    width:99%;
     border-radius:4px;
     border:1px solid black;
+}
+input[type="submit"]{
+    text-align:center;
+    width:100%;
+    padding:10px;
+    background-color:#bde60b;
+    border-radius:5px;
+    border:solid 1px grey;
 }
