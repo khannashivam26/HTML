@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout Properties</title>
+        <style>
+            body{
+                margin: 0 auto;
+                max-width:900px;
+                width:90%;
+            }
+            .heading{
+                background-color: skyblue;
+            }
+            .image{
+                float:right;
+                background-color: lightblue;
+                padding:1em;
+                border-radius:7px;
+                margin:10px;
+
+            }
+            .cleared{
+                clear:right;
+            }
+            .box-set{
+                background-color: peachpuff;
+            }
+                div{
+                width:80px;
+                height:80px;
+                text-align:center;
+                border-radius:8px;
+                margin:20px;
+            }
+
+        </style>
+        <!--
+        float ko use krke left or right shift kr skte hai
+        clear ka use text ko img ke niche se shuru krne ke liye hota hai
+        -->
+    </head>
+    <body>
+        <h1>Float Property</h1>
+        <img class="image" src="img/user.jpg" width="150">
+        <h1 class="heading">Resume</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error provident, animi tenetur a nulla. Quo architecto error necessitatibus quis reiciendis incidunt, enim quam nihil impedit odit ipsam deleniti itaque? Incidunt neque voluptates minus velit, rerum eaque placeat, aliquam dolorum consequatur pariatur soluta ipsam quas quis odio magni corrupti facere!</p> 
+        
+        <p class="cleared">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error provident, animi tenetur a nulla. Quo architecto error necessitatibus quis reiciendis incidunt, enim quam nihil impedit odit ipsam deleniti itaque? Incidunt neque voluptates minus velit, rerum eaque placeat, aliquam dolorum consequatur pariatur soluta ipsam quas quis odio magni corrupti facere!</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error provident, animi tenetur a nulla. Quo architecto error necessitatibus quis reiciendis incidunt, enim quam nihil impedit odit ipsam deleniti itaque? Incidunt neque voluptates minus velit, rerum eaque placeat, aliquam dolorum consequatur pariatur soluta ipsam quas quis odio magni corrupti facere!</p>
+        <div class="box-set">
+            <div class="box box-1">Box1</div>
+            <div class="box box-2">Box2</div>
+            <div class="box box-3">Box3</div>
+            <div class="box box-4">Box4</div>
+        </div>
+
+    </body>
+</html>
+<!--
+position tag me follwoing hote hai:-
+1. static by default hota hai 
+2. relative me hum particular changes kr skte hai jaise top,bottom,etc.
+3. absolute me ek ke upr ek hojaegi chize 
+4. fixed me normal flow rhega ek jgh fix hojaega
+5. sticky:- mixture hai fix aur relative ka
+-->
