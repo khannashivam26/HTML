@@ -1,0 +1,29 @@
+.cont{
+        display:flex;
+        
+}
+.container-1{
+    padding:20px;
+    font-size:30px;
+    width:20%;
+    height:580px;
+    background-color: rgb(175, 175, 174);
+    text-decoration:underline;
+}
+.container-2{
+    width:100%;
+    
+}
+.head,.footer{
+    padding:30px;
+    background-color: olive;
+    height:15.5%;
+    font-size:30px;
+    text-decoration:underline;
+}
+.article{
+    padding:30px;
+    font-size:30px;
+    height:40%;
+    text-decoration:underline;
+}
