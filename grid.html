@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRID LAYOUT</title>
+        <style>
+            .container{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr 1fr;
+                grid-gap:20px;
+                grid-auto-rows:minmax(100px,auto);
+                column-gap:100px;
+                row-gap:100px;
+
+            }
+            .items{
+                background-color: yellow;
+                border:2px solid green;
+                border-radius:5px;
+            }
+            #item-2{
+                grid-row-start:2;
+                grid-row-end:3;
+                grid-column-start:2;
+                grid-column-end:3;
+            }
+            #item-1{
+                grid-column-start:1;
+                grid-column-end:5;
+            }
+            .item-1-container{
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+            }
+            .nested{
+                background-color:aqua;
+                border:1px solid black;
+            }
+        </style>
+    </head>
+<!--
+gird-template wale me baar baar size likhne ki jgh :- repeat(3,1fr) ye krdo    
+agr height mention nhi kri to automatically as per content change hoti rhegi
+grid-auto-rows:- height fix kr dega
+minmax() :- min value,max value add kr denge
+repeat(auto-fill,minmax(200px,1fr)) :-automatic no of boxes in rows of a grid decide krega as per size 
+grid-row-start:- box ko apne hisab se start end dena vertically
+grid-column-start:- box ko shift krwana horizontally as per position
+-->
+    <body>
+        <div class="container">
+            <div class="items item-1-container" id="item-1">
+                <div class="nested">dabbe me dabba 1</div>
+                <div class="nested">dabbe me dabba 2</div>
+                <div class="nested">dabbe me dabba 3</div>
+            </div>
+            <div class="items" id="item-2">Box 2</div>
+            <div class="items">Box 3</div>
+            <div class="items">Box 4</div>
+            <div class="items">Box 5</div>
+        </div>
+    </body>
+</html>
