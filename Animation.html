@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Animation
+        </title>
+        <style>
+            .a{
+                animation:bouncing;
+                animation-iteration-count:infinite;
+                animation-duration:1s;
+                animation-delay:0s;
+                animation-direction:alternate;
+                animation-fill-mode:both;
+               display:inline-block;
+                cursor:pointer;
+               color:white;
+                border-radius: 50%;
+                background-color: blue;
+                font-weight:300;
+                font-size:0.75rem;
+                padding: 1em 2em 1.1em;
+                position:relative;
+                text-decoration:none;
+                text-transform:uppercase;
+                vertical-align:top;
+                margin-top:100px;
+            }
+            @keyframes bouncing{
+                0%{
+                    bottom:0;
+                    box-shadow: 0 0 5px rgba(250, 9, 9, 0.5);
+                }
+                100%{
+                     bottom:50px;
+                     box-shadow:0 50px 50px rgba(239, 8, 8, 0.1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a">Loading</div>
+    </body>
+</html>
