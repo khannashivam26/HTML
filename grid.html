@@ -6,8 +6,9 @@
             .container{
                 display:grid;
                 grid-template-columns:1fr 1fr 1fr 1fr;
+                grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
                 grid-gap:20px;
-                grid-auto-rows:minmax(100px,auto);
+                grid-auto-rows:100px;
                 column-gap:100px;
                 row-gap:100px;
 
@@ -33,6 +34,8 @@
             }
             .nested{
                 background-color:aqua;
+                display:grid;
+                grid-auto-rows:100px;
                 border:1px solid black;
             }
         </style>
@@ -49,12 +52,12 @@ grid-column-start:- box ko shift krwana horizontally as per position
     <body>
         <div class="container">
             <div class="items item-1-container" id="item-1">
-                <div class="nested">dabbe me dabba 1</div>
+                <div class="nested">dabbe me dabba 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. In error, autem tempora vel reprehenderit explicabo nihil corporis deserunt assumenda excepturi consectetur enim consequatur dolorem magnam incidunt eos beatae possimus. Soluta rerum odit labore placeat delectus accusamus iusto laboriosam minus earum error, beatae reiciendis, reprehenderit, libero sit! Explicabo doloribus neque rem officia asperiores. Soluta consectetur sequi ea consequuntur ducimus eius, ex nostrum? Iusto quis iure eaque similique debitis officia voluptatem hic! Quod fugit aliquam debitis officia minima quis ducimus rerum nihil tempora assumenda! Dicta aliquam numquam sunt et reiciendis, vero accusamus libero veniam dolore eligendi voluptas ut fuga impedit illum neque atque sed enim, esse asperiores dignissimos non a, earum explicabo. Laborum eum velit dolor, cum tempora, voluptatem vel dolorum, id unde porro praesentium. Temporibus debitis harum quam necessitatibus numquam quibusdam voluptate enim, ullam obcaecati libero officia reiciendis ea ipsa consequatur magnam, modi suscipit aliquam eius. Eveniet repellendus alias corrupti laborum. Molestias asperiores minima vitae aliquid quia repudiandae expedita minus ipsa ullam accusantium. Harum eos aliquid dolore. Deserunt, qui repudiandae incidunt dolore, perspiciatis, totam labore et maxime accusamus commodi magni quam natus ipsa dolorem dolor quas? Reprehenderit reiciendis sunt molestias facere consectetur doloremque tempore, doloribus quaerat voluptatem, sit, ipsa libero. Laudantium?</div>
                 <div class="nested">dabbe me dabba 2</div>
                 <div class="nested">dabbe me dabba 3</div>
             </div>
             <div class="items" id="item-2">Box 2</div>
-            <div class="items">Box 3</div>
+            <div class="items">Box 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi eveniet tempore accusantium voluptates. Eaque libero quis, eum corrupti sit nam. Amet nemo placeat sit, quam quidem provident adipisci, ratione quas minima dolore rerum aliquam sequi, tenetur libero? Laudantium magnam aperiam voluptate voluptatum accusantium. Amet vitae neque numquam possimus! Necessitatibus asperiores blanditiis nihil itaque, fugit et harum, vitae beatae odio illum, minus rem ex quia impedit laborum alias dignissimos. In architecto eveniet iusto. Nam ea, ullam voluptatibus, iusto hic sed maxime tempore tempora facere, consequatur repellat vel rerum nesciunt velit molestias unde. Pariatur dolor laudantium magnam deserunt veniam laborum fugit architecto dolorem suscipit, autem itaque mollitia impedit nihil, voluptatum corrupti et est corporis porro excepturi nisi recusandae perferendis minus cum officia. Saepe, ad libero! Eligendi neque veritatis incidunt maiores molestiae quas natus. Atque id ad dolores accusantium iste voluptas nisi tempore, neque possimus culpa a, consequatur tenetur ea quasi adipisci vitae voluptate omnis iusto ex fugiat. Accusantium quaerat fuga quae labore, laborum esse voluptatum alias sapiente nemo eveniet soluta in deleniti. Molestiae magnam provident maxime eius dolorem asperiores nobis quasi non! Nisi harum commodi facere? Tempora, voluptatem aperiam consequuntur quibusdam reiciendis deserunt laborum eius perferendis nemo, placeat nulla nostrum possimus?</div>
             <div class="items">Box 4</div>
             <div class="items">Box 5</div>
         </div>
