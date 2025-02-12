@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Challenge 9</title>
+    <style>
+        .container{
+        display:grid;
+        grid-template-columns: 1fr 4fr;   
+        column-gap:20px; 
+        }
+        .c-1{
+            padding:10px;   
+            background-color: #fbd041;
+            border:1px solid black;
+            border-radius:7px;
+            display:grid;
+            grid-template-rows: 565px;
+        }
+        .head,.foot,.art,.ads{
+            padding:10px;
+            background-color: #fbd041;
+            border:1px solid black;
+            border-radius:7px;
+}
+        .c-2{
+            display:grid;
+            row-gap:10px;
+            grid-template-rows: 1fr 2fr 1fr;
+        }
+        .c-3{
+            
+            display:grid;
+            grid-template-columns: 3fr 1fr;
+            
+            column-gap:10px;
+          
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="c-1">
+    <div class="nav">Nav</div>
+</div>
+<div class="c-2">
+    <div class="head">Header</div>
+    <div class="c-3">
+    <div class="art">Article</div>
+    <div class="ads">Ads</div>
+</div>
+<div class="foot">Footer</div>
+</div>
+</div>
+</body>
+</html>
