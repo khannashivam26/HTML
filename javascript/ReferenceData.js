@@ -16,6 +16,5 @@ let books=["english","maths","sst"];
 console.log(books);
 console.log(books[1]); //index particular element as per there index
   
-
 let number=[4,5,6,7,8,9,10];
 console.log(number.length);
