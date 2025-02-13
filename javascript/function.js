@@ -14,3 +14,19 @@ function makeSandwich(bread,veggie,sauce){
 
 let readySandwich=makeSandwich(bread1,veggie1,sauce1);
 console.log(readySandwich);
+
+//paramaterized function
+function books(name){
+    console.log("this book name is "+ name);
+}
+books("harrypotter");
+
+function addition(x,y){
+    console.log(x+y);
+}
+addition(8,9); 
+//OR
+function addition(x,y){
+    return x+y;
+}
+console.log(addition(8,9));
