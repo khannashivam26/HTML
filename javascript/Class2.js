@@ -9,7 +9,7 @@ class Product{
 //creating a subclass (extending a class or inheritance)
 class Label extends Product{
     constructor(name){
-        super(itemName);//super ka use main class ke constructor ko call krta hai 
+        super(itemName);//super main class ke constructor ko call krta hai 
     }
     getname(){
         return this.name+"is the label"
