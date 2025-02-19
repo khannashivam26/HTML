@@ -38,3 +38,9 @@ const character=[
     //get an array of all names
     const charc=character.map((element) => {return element.name})
     console.log(charc)
+    // get an aaray of objects with name and height
+    const charc1=character.map((element) => { return {name:element.name,height:element.height
+    }});
+    console.log(charc1)
+    
+    
