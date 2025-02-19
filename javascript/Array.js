@@ -36,4 +36,28 @@ const names=[{
     { name:piyush khanna",salary:150000}];
 console.log(names.find(function(element){
   return element.salary ===200000}));
-               
+//using arraow function
+console.log(names.find((element) => { return element.salary===150000}));
+
+//using concat method
+let name1=['shivam','piyush','poorna'];
+let name2=['bhavya','charu','vishu'];
+let name3=name1.concat(name2);
+let name3=[...name1,...name2] // using spread operator
+console.log(name3);
+
+//using slice method  syntax: .slice(start,end) if no start value specified it will take index 0 as start
+let name4=name3.slice(2,4);
+console.log(name4);
+
+//for loop 
+for(let i=0;i<name3.length;i++){
+  console.log(name3[i]);
+}
+//for of
+for(let name of name3){
+  console.log(name)}
+//for-each syntax: forEach(function(<string>,<int>){data})
+name3.forEach(function(name,index){
+console.log(name, index)
+})
