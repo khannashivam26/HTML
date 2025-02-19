@@ -61,3 +61,21 @@ for(let name of name3){
 name3.forEach(function(name,index){
 console.log(name, index)
 })
+
+//join
+let student=['s','h','i','v','a'];
+let student1=student.join('');
+console.log(student1)
+//split
+console.log(student1.split(''))
+//filter
+let cities=[
+    {
+        name:'mumbai',population:1500014,
+        name:'delhi',population:1456664,
+        name:'rajasthan',population:1425666,
+        name:'jammu',population:1546778
+    }];
+    console.log(cities.filter((element) =>{return element.population>1500000}))
+//map 
+  console.log(cities.map((element) =>{return element.population*2}))
