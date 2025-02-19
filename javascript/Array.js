@@ -27,3 +27,13 @@ console.log(names.indexOf('daksh'));// it will give only index of first occurenc
 console.log(names.indexOf('daksh',3));//it will check value after sepcified index
 console.log(names.lastIndexOf('daksh')); //piche se first preference di jati hai bas index whi array ke hisb se hoga
 console.log(names.includes('shivam'))//it gives whether its present or not by giving true or false
+
+//for referenced data type we use find function
+const names=[{
+  name:"shivam khanna",
+  salary:100000},
+   { name:"bhavya khanna",salary:200000},
+    { name:piyush khanna",salary:150000}];
+console.log(names.find(function(element){
+  return element.salary ===200000}));
+               
