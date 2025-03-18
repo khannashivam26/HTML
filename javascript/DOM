@@ -23,6 +23,7 @@
                 <td>6</td>
             </tr>
         </table>
+        <button id="click" onclick="alert('namaste')">Namaste</button>
         <script>
             //Root Node
             // console.log(document.documentElement);
@@ -91,6 +92,22 @@
         // body.after(newDiv);
         // firstDiv.replaceWith(newDiv); // replace krdega
         firstDiv.remove(); //ye remove kr dega
+        
+        //EVENTS
+        function callMe(event){
+            console.log(event.type);
+            console.log(event.currentTarget);
+            console.log(event.clientX);
+            
+
+            console.log(this); //ye event ke us tag yani ki button ko call kr dega
+            alert("thank you----")
+        }
+       /* click.onclick=callMe; //agr yaha callMe ke saath () use hoga to wo bina click ke hi alert kr dega  */
+
+        click.addEventListener('click',callMe);
+       // click.removeEventListener('click',callMe);
+
 
        </script>
     </body>
