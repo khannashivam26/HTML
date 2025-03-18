@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>
+            DOM
+        </title>
+    </head>
+    <body id="body">
+        <ul id="element" data="valid">
+            <li class="type-class">1 element</li>
+           <li class="type-class">2 Element</li>
+            <li class="type-class">3 Element</li>
+        </ul>
+        <div id="firstDiv">First DIv</div>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+        <script>
+            //Root Node
+            // console.log(document.documentElement);
+            // console.log(document.body);
+            // console.log(document.head);
+
+            //Childrens
+            // console.log(document.body.childNodes); //array ke form me text aur tag name dega
+            //console.log(document.body.children); //sirf tag name hoga
+            // console.log(document.body.firstChild);
+            // console.log(document.body.lastChild); 
+            // console.log(document.body.firstElementChild);
+            // console.log(document.body.lastElementChild);
+
+            //to save elements in array form
+            // const childrenOfbody= Array.from(document.body.children);
+            // console.log(childrenOfbody)
+
+            //SIBLINGS
+            //  const ulTag = document.body.children[0];
+            //  const first=ulTag.children[0];
+            //  const second=ulTag.children[1];
+            //  console.log(ulTag.nextElementSibling);
+            //  console.log(second.previousElementSibling.textContent);
+            
+            //TABLE DOM MANIPULAITON
+            // const tableDom = document.body.children[1];
+            //  console.log(tableDom); 
+            //  console.log(document.body.children[1].tBodies[0].rows[1].cells[1].textContent);
+            //  console.log(tableDom.rows); 
+            //  console.log(document.body.children[1].tBodies[0].rows[1].cells[1].style="background-color:red"); 
+
+             //ID NAME
+            //  const IdName=document.getElementById("element");
+            //  IdName.style.backgroundColor="red";
+            
+             //CLASS NAME
+            // const ClassName=document.getElementsByClassName("type-class");
+            // console.log(ClassName)
+
+            //BY TAG NAME
+            // console.log(document.getElementsByTagName("table"));
+
+            //BY QUERY SELECTOR 
+            // const listItem=document.querySelectorAll(".type-class"); //All un sbko include krega jisme class hogi agr ALL nhi likha to sirf 1 wala jisme class hogi usko include krega
+            // console.log(listItem);
+            // const list=document.querySelectorAll("ul>li:nth-child(1)");
+            // console.log(list[0].textContent);
+
+            //user definded Attributes
+        //     console.log(element.getAttribute('data')); //ye jo user defined attribute hoga usko access krega
+        //     console.log(element.setAttribute('mySelf','love'));   //new attribute with value bana dega
+        //     console.log(element.getAttribute('mySelf'));    
+        //  console.log(element.hasAttribute('mySelf')); //true/false priunt krwaega ki attribute hai ya nhi
+        //  console.log(element.removeAttribute('mySelf')); //remove kr dega
+        //  console.log(element.attributes); //jitne bhi attributes honge sbke names bta dega
+
+        //CREATE,UPDATE AND REMOVE NODE ELEMENTS
+        const newDiv=document.createElement('div');
+        const newText=document.createTextNode('Namaste World');
+        newDiv.appendChild(newText);  //div tag ke bich me text insert kr diya
+        //agr pura html ka code dalna ho toh innerHTML ka use hoga 
+        // body.append(newDiv);
+        // body.prepend(newDiv);
+        // body.before(newDiv);
+        // body.after(newDiv);
+        // firstDiv.replaceWith(newDiv); // replace krdega
+        firstDiv.remove(); //ye remove kr dega
+
+       </script>
+    </body>
+</html>
