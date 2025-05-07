@@ -9,6 +9,10 @@ const course={
         console.log("you are successgfully stored ");
     }
 }
+course.title;
+//De-structure  (= ke baad mtlb jaha se extract krni hai aur = se pehle {} brackets me mtlb kya value leni hai aur : agr kuch aur name dena hai toh)
+const {title:t}=course;
+console.log(t);
 course.enroll();
 console.log(course.title);
 course.price=999;
